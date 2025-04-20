@@ -1,0 +1,153 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+}
+
+/* Animation for Gradient Background */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Navigation Bar */
+nav {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff7eb3);
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffea00;
+    text-shadow: 0 0 10px #ffea00;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #3f51b5, #673ab7, #9c27b0);
+    color: white;
+    padding: 80px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    animation: glowEffect 3s infinite alternate;
+}
+
+/* Glow Effect */
+@keyframes glowEffect {
+    0% { text-shadow: 0px 0px 10px #ffea00; }
+    100% { text-shadow: 0px 0px 20px #ffea00, 0px 0px 30px #ffea00; }
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    width: 80%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+/* About Me */
+.about img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 5px solid #ff9800;
+}
+
+/* Projects */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 87, 34, 0.6);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+    border: 3px solid white;
+}
+
+/* Contact Section */
+.contact a {
+    color: #ff4081;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.contact a:hover {
+    color: #d500f9;
+    text-shadow: 0 0 10px #d500f9;
+}
+
+/* Rainbow Footer */
+footer {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: rainbowGlow 5s infinite alternate;
+}
+
+/* Rainbow Glow Effect */
+@keyframes rainbowGlow {
+    0% { box-shadow: 0px 0px 5px red; }
+    100% { box-shadow: 0px 0px 15px violet; }
+}
